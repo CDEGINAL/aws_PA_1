@@ -59,7 +59,7 @@ If a car is detected with a confidence level of 90% or higher, sends the image i
 Adds a signal -1 to the SQS queue when all images are processed to inform Instance B that the process is complete.
 
 To Run the Script:
-python3 cardetection.py
+python3 car_detection.py
 Once you run this, check the SQS Dashboard to verify that messages are appearing in the queue.
 
 ### Step 7: Text Recognition Code (Instance B)
@@ -71,11 +71,11 @@ Logs the image index and any detected text to an output file (output.txt).
 Terminates when it receives the -1 signal.
 
 To Run the Script:
-python3 textrecognition.py
+python3 text_recognition.py
 
 ### Step 8: Running the Application
 Run Instance A:
-Execute the car detection script (cardetection.py) on Instance A. This will start processing the images from S3 and send messages to the SQS queue.
+Execute the car detection script (car_detection.py) on Instance A. This will start processing the images from S3 and send messages to the SQS queue.
 Check the SQS Dashboard to see the messages as they are added.
 
 Run Instance B:
