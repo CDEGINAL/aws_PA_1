@@ -83,7 +83,9 @@ Simultaneously or after some delay, execute the text recognition script (text_re
 
 ### Sample Outputs:
 Instance A Output: Image indices where cars are detected.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/042de339-9a1a-4517-95dd-e8996f255475">
 
 Instance B Output (output.txt): Image indices along with detected text in images that contain both cars and text.
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/032631cc-9491-4369-961d-2130e268a270">
